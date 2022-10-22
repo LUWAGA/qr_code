@@ -11,7 +11,7 @@ class OrdersPage extends StatefulWidget {
 }
 
 class _OrdersPageState extends State<OrdersPage> {
-  //var orders = [Text("Order 1 from Ben"), Text("Order 2"), Text("金汤肥牛两份")];
+  //var orders = [Text("Order 1 from Ben"), Text("Order 2"), Text("")];
   void handleComplete(int id) {
     for (var o in orders) {
       if (o.id == id) {
@@ -25,19 +25,45 @@ class _OrdersPageState extends State<OrdersPage> {
     return;
   }
 
-  
-
   List<Order> orders = [
-      Order(id: 1, items: ['Steak 1', 'Pasta 2'], total_price: 0, customer: 'Kevin', time: '11:50'),
-      Order(id: 2, items: ['Roasted Duck Rice 1', 'Grilled chicken chop 1', 'Coke 2'], total_price: 0, customer: 'Bob', time: '11:55'),
-      Order(id: 3, items: ['金汤肥牛 3'], total_price: 0, customer: 'Jane', time: '12:00'),
-      Order(id: 4, items: ['feafae 1'], total_price: 0, customer: 'Steve', time: '12:01'),
-      Order(id: 5, items: ['aefae 1'], total_price: 0, customer: 'Steve', time: '12:02'),
-      Order(id: 6, items: ['feafaeafe 1', 'ehteth 1'], total_price: 0, customer: 'Steve', time: '12:05'),
-      Order(id: 7, items: ['feafae 1'], total_price: 0, customer: 'Steve', time: '12:12'),
-    ];
-
-  
+    Order(
+        id: 1,
+        items: ['Steak 1', 'Pasta 2'],
+        total_price: 23000,
+        customer: 'Paddy',
+        time: '11:50'),
+    Order(
+        id: 2,
+        items: ['Roasted Duck Rice 1', 'Sweet Potatoes', 'Coke 2'],
+        total_price: 19500,
+        customer: 'Bob',
+        time: '11:55'),
+    Order(
+        id: 3,
+        items: ['Kikomando 3'],
+        total_price: 4500,
+        customer: 'Annet',
+        time: '12:00'),
+    Order(
+        id: 4,
+        items: ['Katogo 1'],
+        total_price: 8000,
+        customer: 'Steve',
+        time: '12:01'),
+    Order(
+        id: 5,
+        items: ['Matooke + Rice + Beef 1'],
+        total_price: 14000,
+        customer: 'Steve',
+        time: '12:02'),
+    Order(
+        id: 6,
+        items: ['Black tea 1', 'Rolex 1'],
+        total_price: 6000,
+        customer: 'Jatindi',
+        time: '12:05'),
+    //Order(id: 7, items: [''], total_price: 0, customer: 'Steve', time: '12:12'),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -71,4 +97,3 @@ class _OrdersPageState extends State<OrdersPage> {
     // );
   }
 }
-

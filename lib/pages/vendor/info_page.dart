@@ -91,7 +91,7 @@ class MapScreenState extends State<ProfilePage>
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
                                   new Text(
-                                    'Stall Information',
+                                    'About us',
                                     style: TextStyle(
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.bold),
@@ -174,7 +174,7 @@ class MapScreenState extends State<ProfilePage>
                                 child: new TextField(
                                   decoration: const InputDecoration(
                                       hintText:
-                                          "Enter description of your Stall"),
+                                          "Enter description of your Restaurant"),
                                   enabled: !_status,
                                 ),
                               ),
@@ -267,7 +267,7 @@ class MapScreenState extends State<ProfilePage>
                               ),
                               Flexible(
                                 child: Text(
-                                  '\$500',
+                                  '\shs 11,2500',
                                   style: TextStyle(
                                       color: AppColors.primaryColor,
                                       fontSize: 20,
